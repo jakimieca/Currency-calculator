@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Kalkulator walut</title>
 </head>
-<body>
-    
 
+<body>
+    <p class="title">
+        Przelicznik walut
+    </p>
+    <form>
+        <label>Kwota w zł*:</label>
+        <input type="text" class="cell"><br><br>
+        <label>Waluta:</label>
+        <select>
+            <option value="Euro">Euro</option>
+            <option value="Dolar">Dolar Amerykański</option>
+            <option value="Funt">Funt Brytyjski</option>
+        </select>
+    </form><br>
+    <button>Przelicz!</button>
+<p class="information">
+    Kursy pochodzą ze strony nbp.pl z Tabeli nr 115/A/NBP/2020 z dnia 2020-06-16
+</p>
 
 
 </body>
+
 </html>
