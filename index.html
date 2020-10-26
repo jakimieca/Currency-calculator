@@ -9,30 +9,32 @@
 </head>
 
 <body>
-    <p class="title">
-        Przelicznik walut
-    </p>
-    <form class="form">
-        <label class="Label_Text">
-            Kwota w zł*:
-            <input name="amount" placeholder="Wpisz kwotę w złotówkach" autofocus class="Label_cell">
-        </label>
-        <br><br>
-        <label class="Label_Text">
-            Waluta:
-            <select name="currency" class="Label_cell">
-                <option value="Euro">Euro</option>
-                <option value="Dolar">Dolar Amerykański</option>
-                <option value="Funt">Funt Brytyjski</option>
-            </select>
-        </label>
-        <br>
-        <button class="button">Przelicz!</button>
-        <p class="information">
-            Kursy pochodzą ze strony nbp.pl z Tabeli nr 115/A/NBP/2020 z dnia 2020-06-16
+    <section class="container">
+        <p class="title">
+            Przelicznik walut
         </p>
-    </form>
-
+        <form class="form">
+            <label>
+                <span class="form_labelText">Kwota w zł*:</span>
+                <input type="number" name="amount" placeholder="Wpisz kwotę w złotówkach" autofocus class="form_field"
+                    required>
+            </label>
+            <br><br>
+            <label>
+                <span class="form_labelText">Waluta:</span>
+                <select name="currency" class="form_field">
+                    <option value="Euro">Euro</option>
+                    <option value="Dolar">Dolar Amerykański</option>
+                    <option value="Funt">Funt Brytyjski</option>
+                </select>
+            </label>
+            <br>
+            <button class="form_button">Przelicz!</button>
+            <p class="information">
+                Kursy pochodzą ze strony nbp.pl z Tabeli nr 115/A/NBP/2020 z dnia 2020-06-16
+            </p>
+        </form>
+    </section>
 </body>
 
 </html>
