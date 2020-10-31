@@ -12,10 +12,6 @@ let form = document.querySelector(".js-form");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-})
-
-button.addEventListener("click", () => {
-
 
     if (curreny.value === "Euro") {
         result = amonut.value / rateEUR;
@@ -29,5 +25,4 @@ button.addEventListener("click", () => {
         result = amonut.value / rateGBP;
         formResult.innerText = (`${amonut.value} PLN = ${result.toFixed(2)} GBP`);
     }
-
 })
