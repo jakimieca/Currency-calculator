@@ -1,4 +1,4 @@
-console.log("Hello World!");
+//console.log("Hello World!");
 
 const rateEUR = 4.4278;
 const rateGBP = 4.9384;
